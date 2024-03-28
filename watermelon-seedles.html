@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+
+<!--[if IE 8 ]><html lang="en" dir="ltr"  class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html lang="en" dir="ltr"  class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" dir="ltr" class="no-js">
+<!--<![endif]-->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta name="Generator" content="Drupal 7 (http://drupal.org)"/>
+    <link rel="shortcut icon" href="https://www.shneorseed.com/sites/all/themes/theme667/favicon.ico" type="image/vnd.microsoft.icon"/>
+
+    <!--[if lte IE 7]> <div style=' text-align:center; clear: both; padding:0 0 0 15px; position: relative;'> <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div> <![endif]-->
+
+    <title>Watermelon - Seedless | Shneor Seed Co.</title>
+
+    <!--[if LT IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+
+    <!--[if lte IE 8]>
+    	<style type="text/css">
+        	.poll .bar, .poll .bar .foreground,
+    		#superfish-1 ul,
+    		section.block .view .view-node a, 
+    		.view-services .jcarousel-container-horizontal ul li .view-node a, 
+    		.view-node a,
+    		ul.links li a,
+    		.content ul.pager li.pager-current,
+    		.content ul.pager li a { behavior:url(/sites/all/themes/theme667/js/PIE.php); zoom:1; position:relative;}
+    	</style>
+    <![endif]-->
+
+    <style type="text/css" media="all">
+    @import url("https://www.shneorseed.com/modules/system/system.base.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/system/system.menus.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/system/system.messages.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/system/system.theme.css?p7nidb");
+    </style>
+    <style type="text/css" media="all">
+    @import url("https://www.shneorseed.com/sites/all/libraries/chosen/chosen.css?p7nidb");
+    </style>
+    <style type="text/css" media="all">
+    @import url("https://www.shneorseed.com/sites/all/modules/scroll_to_top/scroll_to_top.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/aggregator/aggregator.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/book/book.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/comment/comment.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/field/theme/field.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/node/node.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/poll/poll.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/search/search.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/user/user.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/forum/forum.css?p7nidb");
+    @import url("https://www.shneorseed.com/sites/all/modules/views/css/views.css?p7nidb");
+    </style>
+    <style type="text/css" media="all">
+    @import url("https://www.shneorseed.com/sites/all/modules/colorbox/styles/default/colorbox_style.css?p7nidb");
+    @import url("https://www.shneorseed.com/sites/all/modules/ctools/css/ctools.css?p7nidb");
+    @import url("https://www.shneorseed.com/sites/all/modules/panels/css/panels.css?p7nidb");
+    </style>
+    <style type="text/css" media="all">
+        <!--/*-->
+        <![CDATA[/*><!--*/
+        #back-top{right:40px;}#back-top span#button{background-color:#d1422e;}#back-top span#button:hover{opacity:1;filter:alpha(opacity = 1);background-color:#3e3d30;}span#link{display :none;}
+
+        /*]]>
+        * /-- >
+        
+    </style>
+    <style type="text/css" media="all">
+    @import url("https://www.shneorseed.com/sites/all/modules/views_jqfx_cycle/views_jqfx_cycle.css?p7nidb");
+    @import url("https://www.shneorseed.com/sites/all/libraries/superfish/css/superfish.css?p7nidb");
+    </style>
+    <style type="text/css" media="screen">
+    @import url("https://www.shneorseed.com/sites/all/themes/theme667/css/boilerplate.css?p7nidb");
+    @import url("https://www.shneorseed.com/sites/all/themes/theme667/css/style.css?p7nidb");
+    </style>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/jquery_update/replace/jquery/1.8/jquery.min.js?v=1.8.3"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/misc/jquery.once.js?v=1.2"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/misc/drupal.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/jquery_update/replace/ui/external/jquery.cookie.js?v=67fb34f6a866c40d0570"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/jquery_update/replace/misc/jquery.form.min.js?v=2.69"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/misc/ajax.js?v=7.59"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/jquery_update/js/jquery_update.js?v=0.0.1"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/libraries/colorbox/jquery.colorbox-min.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/colorbox/js/colorbox.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/colorbox/styles/default/colorbox_style.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/scroll_to_top/scroll_to_top.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/libraries/jquery.cycle/jquery.cycle.all.min.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/views_jqfx_cycle/views_jqfx_cycle.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/views/js/base.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/misc/progress.js?v=7.59"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/views/js/ajax_view.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/libraries/chosen/chosen.jquery.min.js?v=1.0.0"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/google_analytics/googleanalytics.js?p7nidb"></script>
+    <script type="text/javascript">
+    ////--><![CDATA[//><!--
+    (function(i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        },
+        i[r].l = 1 * new Date();
+        a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga");
+    ga("create", "UA-43677790-1", {
+        "cookieDomain": "auto"
+    });
+    ga("send", "pageview");
+    //--><!]]>
+    </script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/lang_dropdown/lang_dropdown.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/libraries/superfish/jquery.hoverIntent.minified.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/libraries/superfish/superfish.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/libraries/superfish/supersubs.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/superfish/superfish.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/themes/theme667/js/theme667.core.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/themes/theme667/js/jquery.loader.js?p7nidb"></script>
+    <script type="text/javascript">
+    ////--><![CDATA[//><!--
+    jQuery.extend(Drupal.settings, {
+        "basePath": "\/",
+        "pathPrefix": "",
+        "ajaxPageState": {
+            "theme": "theme667",
+            "theme_token": "o6e3tcYKs5hCij-dxm3UWJAAUlvdHTXsJAtNz_kBpVA",
+            "jquery_version": "1.8",
+            "js": {
+                "sites\/all\/modules\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js": 1,
+                "misc\/jquery.once.js": 1,
+                "misc\/drupal.js": 1,
+                "sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js": 1,
+                "sites\/all\/modules\/jquery_update\/replace\/misc\/jquery.form.min.js": 1,
+                "misc\/ajax.js": 1,
+                "sites\/all\/modules\/jquery_update\/js\/jquery_update.js": 1,
+                "sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js": 1,
+                "sites\/all\/modules\/colorbox\/js\/colorbox.js": 1,
+                "sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.js": 1,
+                "sites\/all\/modules\/scroll_to_top\/scroll_to_top.js": 1,
+                "sites\/all\/libraries\/jquery.cycle\/jquery.cycle.all.min.js": 1,
+                "sites\/all\/modules\/views_jqfx_cycle\/views_jqfx_cycle.js": 1,
+                "sites\/all\/modules\/views\/js\/base.js": 1,
+                "misc\/progress.js": 1,
+                "sites\/all\/modules\/views\/js\/ajax_view.js": 1,
+                "sites\/all\/libraries\/chosen\/chosen.jquery.min.js": 1,
+                "sites\/all\/modules\/google_analytics\/googleanalytics.js": 1,
+                "0": 1,
+                "sites\/all\/modules\/lang_dropdown\/lang_dropdown.js": 1,
+                "sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js": 1,
+                "sites\/all\/libraries\/superfish\/superfish.js": 1,
+                "sites\/all\/libraries\/superfish\/supersubs.js": 1,
+                "sites\/all\/modules\/superfish\/superfish.js": 1,
+                "sites\/all\/themes\/theme667\/js\/theme667.core.js": 1,
+                "sites\/all\/themes\/theme667\/js\/jquery.loader.js": 1
+            },
+            "css": {
+                "modules\/system\/system.base.css": 1,
+                "modules\/system\/system.menus.css": 1,
+                "modules\/system\/system.messages.css": 1,
+                "modules\/system\/system.theme.css": 1,
+                "sites\/all\/libraries\/chosen\/chosen.css": 1,
+                "sites\/all\/modules\/scroll_to_top\/scroll_to_top.css": 1,
+                "modules\/aggregator\/aggregator.css": 1,
+                "modules\/book\/book.css": 1,
+                "modules\/comment\/comment.css": 1,
+                "modules\/field\/theme\/field.css": 1,
+                "modules\/node\/node.css": 1,
+                "modules\/poll\/poll.css": 1,
+                "modules\/search\/search.css": 1,
+                "modules\/user\/user.css": 1,
+                "modules\/forum\/forum.css": 1,
+                "sites\/all\/modules\/views\/css\/views.css": 1,
+                "sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.css": 1,
+                "sites\/all\/modules\/ctools\/css\/ctools.css": 1,
+                "sites\/all\/modules\/panels\/css\/panels.css": 1,
+                "0": 1,
+                "sites\/all\/modules\/views_jqfx_cycle\/views_jqfx_cycle.css": 1,
+                "sites\/all\/libraries\/superfish\/css\/superfish.css": 1,
+                "sites\/all\/themes\/theme667\/css\/boilerplate.css": 1,
+                "sites\/all\/themes\/theme667\/css\/style.css": 1
+            }
+        },
+        "colorbox": {
+            "opacity": "0.85",
+            "current": "{current} of {total}",
+            "previous": "\u00ab Prev",
+            "next": "Next \u00bb",
+            "close": "Close",
+            "maxWidth": "98%",
+            "maxHeight": "98%",
+            "fixed": true,
+            "mobiledetect": true,
+            "mobiledevicewidth": "480px"
+        },
+        "jcarousel": {
+            "ajaxPath": "\/?q=jcarousel\/ajax\/views"
+        },
+        "scroll_to_top": {
+            "label": "Back to top"
+        },
+        "views": {
+            "ajax_path": "\/?q=views\/ajax",
+            "ajaxViews": {
+                "views_dom_id:fc43b8218f0152b7c1554e1c6db84e64": {
+                    "view_name": "portfolio",
+                    "view_display_id": "page_3",
+                    "view_args": "Watermelon---Seedless",
+                    "view_path": "portfolio-3-cols\/Watermelon---Seedless",
+                    "view_base_path": "portfolio-3-cols",
+                    "view_dom_id": "fc43b8218f0152b7c1554e1c6db84e64",
+                    "pager_element": 0
+                }
+            }
+        },
+        "urlIsAjaxTrusted": {
+            "\/?q=views\/ajax": true,
+            "\/?q=portfolio-3-cols\/Watermelon---Seedless": true
+        },
+        "lang_dropdown": {
+            "language_content": {
+                "jsWidget": {
+                    "widget": "chosen",
+                    "disable_search": 1,
+                    "no_results_text": "No language match"
+                }
+            }
+        },
+        "googleanalytics": {
+            "trackOutbound": 1,
+            "trackMailto": 1,
+            "trackDownload": 1,
+            "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip",
+            "trackColorbox": 1
+        },
+        "superfish": [{
+            "id": "1",
+            "sf": {
+                "animation": {
+                    "opacity": "show"
+                },
+                "speed": "\u0027fast\u0027",
+                "autoArrows": true,
+                "dropShadows": true,
+                "disableHI": false
+            },
+            "plugins": {
+                "supposition": false,
+                "bgiframe": false,
+                "supersubs": {
+                    "minWidth": "12",
+                    "maxWidth": "27",
+                    "extraWidth": 1
+                }
+            }
+        }, {
+            "id": "2",
+            "sf": {
+                "animation": {
+                    "opacity": "show"
+                },
+                "speed": "\u0027fast\u0027",
+                "autoArrows": false,
+                "dropShadows": true,
+                "disableHI": false
+            },
+            "plugins": {
+                "supposition": false,
+                "bgiframe": false,
+                "supersubs": {
+                    "minWidth": "12",
+                    "maxWidth": "27",
+                    "extraWidth": 1
+                }
+            }
+        }]
+    });
+    //--><!]]>
+    </script>
+    <script type="text/javascript">
+    WebFontConfig = {
+        google: {
+            families: ['Open+Sans:700,800:latin']
+        }
+    };
+    (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+    })();
+    </script>
+
+</head>
+<body id="body" class="html not-front not-logged-in no-sidebars page-portfolio-3-cols page-portfolio-3-cols-watermelon---seedless i18n-en with-navigation with-subnav page-watermelon---seedless section-portfolio-3-cols">
+
+    <div id="page-wrapper">
+
+        <div id="page">
+
+            <header id="header" role="banner" class="clearfix">
+                <div class="section-1 clearfix">
+                    <div class="header-wrapper">
+                       
+
+                                </div>
+                                <!-- /.block -->
+                                <div id="block-lang-dropdown-language-content" class="block block-lang-dropdown block-even">
+
+                                    <div class="content">
+                                        <form class="lang_dropdown_form language_content" id="lang_dropdown_form_language_content" action="/?q=portfolio-3-cols/Watermelon---Seedless" method="post" accept-charset="UTF-8">
+                                            <div>
+                                                <div class="form-item form-type-select form-item-lang-dropdown-select">
+                                                    <select style="width:60px" class="lang-dropdown-select-element form-select" id="lang-dropdown-select-language_content" name="lang_dropdown_select">
+                                                        <option value="en" selected="selected">en</option>
+                                                        <option value="ru">ru</option>
+                                                    </select>
+                                                </div>
+                                                <input type="hidden" name="en" value="/?q=portfolio-3-cols/Watermelon---Seedless"/>
+                                                <input type="hidden" name="ru" value="/?q=ru/portfolio-3-cols/Watermelon---Seedless"/>
+                                                <noscript>
+                                                    <div>
+                                                        <input type="submit" id="edit-submit" name="op" value="Go" class="form-submit"/>
+                                                    </div>
+                                                </noscript>
+                                                <input type="hidden" name="form_build_id" value="form-_3c4hckscOtFs_mrpkYzgki3K3UM0lR6ipMhtQwt7U4"/>
+                                                <input type="hidden" name="form_id" value="lang_dropdown_form"/>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- /.content -->
+
+                                </div>
+                                <!-- /.block -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <!-- /#header -->
+
+            <div id="main-wrapper">
+                <div id="main" class="clearfix">
+
+                    <div id="content" class="column" role="main">
+                        <div class="section">
+
+                            <h1 class="title" id="page-title">Watermelon - Seedless</h1>
+
+                            <div class="tabs"></div>
+
+                            <div class="region region-content">
+                                <div id="block-system-main" class="block block-system block-odd">
+
+                                    <div class="content">
+                                        <div class="view view-portfolio view-id-portfolio view-display-id-page_3 view-dom-id-fc43b8218f0152b7c1554e1c6db84e64">
+
+                                            <div class="view-content">
+                                                <div class="views-row views-row-1 views-row-odd views-row-first">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/ss_Page_27_Image_0005.jpg" title="IZHAK " class="colorbox" data-colorbox-gallery="gallery-all-FtDuisrvmD8" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/ss_Page_27_Image_0005.jpg?itok=ya_B39vn" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/989">IZHAK </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Seedless.</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Relative maturity 97 days,Fruit weight:
+                                                        6-7 kg. globe shape.Bluish green rind with
+                                                        narrow dark green stripes.Flesh bright red,
+                                                        juicy, sugar content of 12%, great taste.
+                                                        Vigorous plant with good fruit set. Flesh is
+                                                        firm and less prone to a hollow heart. Good
+                                                        for shipping and storage.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-2 views-row-even">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/ss_Page_30_Image_0002.jpg" title="LAHAT" class="colorbox" data-colorbox-gallery="gallery-all-FtDuisrvmD8" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/ss_Page_30_Image_0002.jpg?itok=hU9x2DPe" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/1004">LAHAT</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Hybrid F1 Personal Mini Seedless watermelon</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Type:Tiger type,
+                                                        Fruit Weight:1.8-2.1Kg,
+                                                        Fruit shape:Round -deep globe ,Ring
+                                                        color: green with wide dark green strips,
+                                                        Flesh:red, juicy and sweet,
+                                                        Disease resistance:mild disease resistance,
+                                                        Features:good for storage and shipping.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-3 views-row-odd">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/ss_Page_30_Image_0004.jpg" title="LAHAV" class="colorbox" data-colorbox-gallery="gallery-all-FtDuisrvmD8" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/ss_Page_30_Image_0004.jpg?itok=p0W2sbBl" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/1007">LAHAV</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Hybrid F1 Crimson Seedless Mini watermelon</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Weight:2-3Kg , Shape:Globe-Oblong,Ring
+                                                        Color:Green -Light green,Flesh:10-11%,
+                                                        Features:Spring ,Days from sowing :80-
+                                                        90days.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-4 views-row-even">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/ss_Page_30_Image_0003.jpg" title="LEVANON " class="colorbox" data-colorbox-gallery="gallery-all-FtDuisrvmD8" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/ss_Page_30_Image_0003.jpg?itok=eYEQJmP-" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/1005">LEVANON </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Hybrid F1 Mini Seedless watermelon.</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Days from sowing:75 days,Weight
+                                                        2-2.5 Kg ,Shape: round to deep
+                                                        globe ,Rind color:Dark green,
+                                                        Flesh:Red,Characteristics:Good for
+                                                        shipping and storage.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-5 views-row-odd">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/LIOR%20.jpg" title="LIOR" class="colorbox" data-colorbox-gallery="gallery-all-FtDuisrvmD8" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/LIOR%20.jpg?itok=f04K3SdE" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/1119">LIOR</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content"></div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Strong plant, oval shape, deep red flesh, very sweet, high brix.
+                                                        Fruit weight: 8-10 kg. High resistances: Fusarium race 1
+                                                        Extremely adaptable for various growing conditions.
+                                                        Attractive rind color.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-6 views-row-even">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/ss_Page_26_Image_0002.jpg" title="YAAD " class="colorbox" data-colorbox-gallery="gallery-all-FtDuisrvmD8" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/ss_Page_26_Image_0002.jpg?itok=v0jl06dN" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/980">YAAD </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Hybrid F1 - Seedless.</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Plant is productive. Can be harvested 97
+                                                        days from sowing.
+                                                        Fruit weighs 7-10 kg, is globe shaped.
+                                                        Rind is green with nerrow dark-green
+                                                        stripes, and is durable.
+                                                        Flesh is juicy, red color, tender with
+                                                        excellent taste.
+                                                        Good quality, good for shipping and
+                                                        storage.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-7 views-row-odd">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/ss_Page_26_Image_0006.jpg" title="YAAR" class="colorbox" data-colorbox-gallery="gallery-all-FtDuisrvmD8" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/ss_Page_26_Image_0006.jpg?itok=OrtvdcaM" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/984">YAAR</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Hybrid F1 - Seedless.</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Weight:11-13Kg,Shape:Short
+                                                        Oblong,Rind color:light green
+                                                        with dark green stripes,Relative
+                                                        Maturity:Early,Features:Spring
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-8 views-row-even">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/ss_Page_26_Image_0004.jpg" title="YACOV " class="colorbox" data-colorbox-gallery="gallery-all-FtDuisrvmD8" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/ss_Page_26_Image_0004.jpg?itok=GqaW345n" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/982">YACOV </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Hybrid F1 - Seedless.</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Plant is vigorous, with good fruit set. Can
+                                                        be harvested 97 days from sowing.
+                                                        Fruit weighs 6-9 kg, is round shaped and
+                                                        uniform.
+                                                        Rind is bluish-green with nerrow dark-green
+                                                        stripes.
+                                                        Flesh is juicy, bright red color, sweet with
+                                                        sugar content of 12% and tasty.
+                                                        Flesh is firm and less prone to hollow heart.
+                                                        Good for shipping and storage.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-9 views-row-odd">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/ss_Page_27_Image_0001.jpg" title="YAFA" class="colorbox" data-colorbox-gallery="gallery-all-FtDuisrvmD8" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/ss_Page_27_Image_0001.jpg?itok=_k1MAcHR" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/985">YAFA</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Seedless.</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Crimson type ,Relative maturity 97 days from sowing
+                                                        .Fruit weight: 7-10 kg.
+                                                        shape globe,Rind
+                                                        color: light green with wide dark green stripes.
+                                                        Bright red flesh, firm, crispy, juicy,
+                                                        very sweet with an excellent quality.
+                                                        Tolerant to hollow heart.
+                                                        Very productive, high sugar content.
+                                                        Suitable for home garden and roadside market.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-10 views-row-even">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/YAKIR%20seedless%20watermelon.jpg" title="YAKIR " class="colorbox" data-colorbox-gallery="gallery-all-FtDuisrvmD8" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/YAKIR%20seedless%20watermelon.jpg?itok=Aa7SXxvt" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/988">YAKIR </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Seedless.</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Tiger type Relative maturity 89 days from
+                                                        sowing.Fruit weight: 1.9-2.2 kg,Fruit shape:
+                                                        round - deep globe,Flesh:red,juicy and
+                                                        sweet.Suitable for storage and shipping.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-11 views-row-odd">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/ss_Page_27_Image_0002.jpg" title="YAKUM " class="colorbox" data-colorbox-gallery="gallery-all-FtDuisrvmD8" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/ss_Page_27_Image_0002.jpg?itok=yfneextb" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/986">YAKUM </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Seedless.</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Relative maturity 87 days,Fruit weight: 4-6
+                                                        kg. globe shape.Light: bluish green rind
+                                                        with narrow dark green stripes.Flesh: bright
+                                                        red, juicy, sugar content of 12%, great taste.
+                                                        Vigorous plant with good fruit set. Flesh is
+                                                        firm and less prone to a hollow heart.Good
+                                                        for shipping and storage
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-12 views-row-even">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/ss_Page_26_Image_0001.jpg" title="YAMIN " class="colorbox" data-colorbox-gallery="gallery-all-FtDuisrvmD8" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/ss_Page_26_Image_0001.jpg?itok=j4oqA2WW" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/979">YAMIN </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Hybrid F1 - Seedless.</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Globe shaped fruit is light green with broad
+                                                        distinct dark green stripes.
+                                                        Fruit sets well, and weighs around 11 kg.
+                                                        Bright red flesh is firm and tolerant to hollow
+                                                        heart.
+                                                        Sugar content is around 12%.
+                                                        Reliable good quality, easy to grow.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-13 views-row-odd">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/ss_Page_27_Image_0006.jpg" title="YARDEN" class="colorbox" data-colorbox-gallery="gallery-all-FtDuisrvmD8" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/ss_Page_27_Image_0006.jpg?itok=orpFGOYy" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/990">YARDEN</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Seedless.</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Crimson type,Relative maturity 89 days
+                                                        from sowing.Fruit weight: 1.9-2.2 kg,Fruit
+                                                        shape: round - deep globe,Flesh:red,juicy
+                                                        and sweet.Suitable for storage and shipping
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-14 views-row-even views-row-last">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/ss_Page_27_Image_0003.jpg" title="YEFET " class="colorbox" data-colorbox-gallery="gallery-all-FtDuisrvmD8" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/ss_Page_27_Image_0003.jpg?itok=KAOn1kuy" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/987">YEFET </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Seedless.</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Crimson type,Relative maturity 97 days from sowing.
+                                                        Fruit weight:11-12 kg,
+                                                        Fruit shape: globe, Rind
+                                                        color:light green with wide dark green stripes.
+                                                        Flesh: bright red, firm, crispy, juicy, sweet.
+                                                        Tolerant to hollow heart.
+                                                        Easy to grow, reliable good quality,
+                                                        sugar content around 12%,
+                                                        stores well,Suitable for shipping.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- /.content -->
+
+                                </div>
+                                <!-- /.block -->
+                            </div>
+
+                        </div>
+                        <!-- /.section -->
+                    </div>
+                    <!-- /#content -->
+
+                </div>
+                <!-- /#main -->
+            </div>
+            <!-- /#main-wrapper -->
+
+            <footer id="footer" role="contentinfo">
+                <div class="footer-wrapper clearfix">
+                    <div class="region region-footer">
+                        <div id="block-block-5" class="block block-block block-even">
+
+                            <div class="content">
+
+                                    Shneor Seed Co. &copy; 2024  
+                                <a href="?q=node/79">Disclaimer</a>
+                            </div>
+                            <!-- /.content -->
+
+                        </div>
+                        <!-- /.block -->
+                        <div id="block-superfish-2" class="block block-superfish block-odd">
+
+                            <div class="content">
+                                <ul id="superfish-2" class="menu sf-menu sf-main-menu sf-horizontal sf-style-default sf-total-items-4 sf-parent-items-1 sf-single-items-3">
+                                    <li id="menu-1761-2" class="first odd sf-item-1 sf-depth-1 sf-total-children-17 sf-parent-children-0 sf-single-children-17 menuparent">
+                                        <a href="/?q=category-4-cols" title="" class="sf-depth-1 menuparent">Products</a>
+                                        <ul>
+                                            <li id="menu-1778-2" class="first odd sf-item-1 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Cherry-tomato" title="" class="sf-depth-2">Cherry tomato</a>
+                                            </li>
+                                            <li id="menu-1779-2" class="middle even sf-item-2 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Tomato---Determinate-Type" title="" class="sf-depth-2">Tomato - Determinate Type</a>
+                                            </li>
+                                            <li id="menu-1780-2" class="middle odd sf-item-3 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Tomato---Indeterminate-Type" title="" class="sf-depth-2">Tomato - Indeterminate Type</a>
+                                            </li>
+                                            <li id="menu-1763-2" class="middle even sf-item-4 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/melon" title="" class="sf-depth-2">Melon</a>
+                                            </li>
+                                            <li id="menu-1785-2" class="middle odd sf-item-5 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Sweet-Pepper" title="" class="sf-depth-2">Sweet Pepper</a>
+                                            </li>
+                                            <li id="menu-1786-2" class="middle even sf-item-6 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Mini-pepper" title="" class="sf-depth-2">Mini pepper</a>
+                                            </li>
+                                            <li id="menu-1787-2" class="middle odd sf-item-7 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Hot-Pepper" title="" class="sf-depth-2">Hot Pepper</a>
+                                            </li>
+                                            <li id="menu-1862-2" class="middle even sf-item-8 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Lettuce" title="" class="sf-depth-2">Lettuce</a>
+                                            </li>
+                                            <li id="menu-1859-2" class="middle odd sf-item-9 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Watermelon---Seedless" title="" class="sf-depth-2 active">Watermelon - Seedless</a>
+                                            </li>
+                                            <li id="menu-1860-2" class="middle even sf-item-10 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Watermelon---Seeded" title="" class="sf-depth-2">Watermelon - Seeded</a>
+                                            </li>
+                                            <li id="menu-1863-2" class="middle odd sf-item-11 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Cucumber" title="" class="sf-depth-2">Cucumber</a>
+                                            </li>
+                                            <li id="menu-1864-2" class="middle even sf-item-12 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Eggplant" title="" class="sf-depth-2">Eggplant</a>
+                                            </li>
+                                            <li id="menu-1865-2" class="middle odd sf-item-13 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Squash" title="" class="sf-depth-2">Squash</a>
+                                            </li>
+                                            <li id="menu-1866-2" class="middle even sf-item-14 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Cabbage" title="" class="sf-depth-2">Cabbage</a>
+                                            </li>
+                                            <li id="menu-1764-2" class="middle odd sf-item-15 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Broccoli" title="" class="sf-depth-2">Broccoli</a>
+                                            </li>
+                                            <li id="menu-2314-2" class="middle even sf-item-16 sf-depth-2 sf-no-children">
+                                                <a href="http://www.shneorseed.com/?q=portfolio-3-cols/Cauliflower" title="" class="sf-depth-2">Cauliflower</a>
+                                            </li>
+                                            <li id="menu-1911-2" class="last odd sf-item-17 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Rootstock" title="" class="sf-depth-2">Rootstock</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-2448-2" class="middle even sf-item-2 sf-depth-1 sf-no-children">
+                                        <a href="/?q=distributers" class="sf-depth-1 sf-depth-1">Distributors</a>
+                                    </li>
+                                    <li id="menu-442-2" class="middle odd sf-item-3 sf-depth-1 sf-no-children">
+                                        <a href="/?q=contacts" title="Stay In Touch" class="sf-depth-1">Contact Us</a>
+                                    </li>
+                                    <li id="menu-2820-2" class="last even sf-item-4 sf-depth-1 sf-no-children">
+                                        <a href="/?q=authentication" title="" class="sf-depth-1 sf-depth-1">Authentication</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /.content -->
+
+                        </div>
+                        <!-- /.block -->
+                        <div id="block-block-6" class="block block-block block-even">
+
+                          
+                            <!-- /.content -->
+
+                        </div>
+                        <!-- /.block -->
+                    </div>
+                </div>
+                <!-- /#footer-wrapper -->
+            </footer>
+            <!-- /#footer -->
+
+        </div>
+        <!-- /#page -->
+    </div>
+    <!-- /#page-wrapper -->
+</body>
+</html>

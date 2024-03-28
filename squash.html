@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+
+<!--[if IE 8 ]><html lang="en" dir="ltr"  class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html lang="en" dir="ltr"  class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" dir="ltr" class="no-js">
+<!--<![endif]-->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta name="Generator" content="Drupal 7 (http://drupal.org)"/>
+    <link rel="shortcut icon" href="https://www.shneorseed.com/sites/all/themes/theme667/favicon.ico" type="image/vnd.microsoft.icon"/>
+
+    <!--[if lte IE 7]> <div style=' text-align:center; clear: both; padding:0 0 0 15px; position: relative;'> <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div> <![endif]-->
+
+    <title>Squash </title>
+
+    <!--[if LT IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+
+    <!--[if lte IE 8]>
+    	<style type="text/css">
+        	.poll .bar, .poll .bar .foreground,
+    		#superfish-1 ul,
+    		section.block .view .view-node a, 
+    		.view-services .jcarousel-container-horizontal ul li .view-node a, 
+    		.view-node a,
+    		ul.links li a,
+    		.content ul.pager li.pager-current,
+    		.content ul.pager li a { behavior:url(/sites/all/themes/theme667/js/PIE.php); zoom:1; position:relative;}
+    	</style>
+    <![endif]-->
+
+    <style type="text/css" media="all">
+    @import url("https://www.shneorseed.com/modules/system/system.base.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/system/system.menus.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/system/system.messages.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/system/system.theme.css?p7nidb");
+    </style>
+    <style type="text/css" media="all">
+    @import url("https://www.shneorseed.com/sites/all/libraries/chosen/chosen.css?p7nidb");
+    </style>
+    <style type="text/css" media="all">
+    @import url("https://www.shneorseed.com/sites/all/modules/scroll_to_top/scroll_to_top.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/aggregator/aggregator.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/book/book.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/comment/comment.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/field/theme/field.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/node/node.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/poll/poll.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/search/search.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/user/user.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/forum/forum.css?p7nidb");
+    @import url("https://www.shneorseed.com/sites/all/modules/views/css/views.css?p7nidb");
+    </style>
+    <style type="text/css" media="all">
+    @import url("https://www.shneorseed.com/sites/all/modules/colorbox/styles/default/colorbox_style.css?p7nidb");
+    @import url("https://www.shneorseed.com/sites/all/modules/ctools/css/ctools.css?p7nidb");
+    @import url("https://www.shneorseed.com/sites/all/modules/panels/css/panels.css?p7nidb");
+    </style>
+    <style type="text/css" media="all">
+        <!--/*-->
+        <![CDATA[/*><!--*/
+        #back-top{right:40px;}#back-top span#button{background-color:#d1422e;}#back-top span#button:hover{opacity:1;filter:alpha(opacity = 1);background-color:#3e3d30;}span#link{display :none;}
+
+        /*]]>
+        * /-- >
+        
+    </style>
+    <style type="text/css" media="all">
+    @import url("https://www.shneorseed.com/sites/all/modules/views_jqfx_cycle/views_jqfx_cycle.css?p7nidb");
+    @import url("https://www.shneorseed.com/sites/all/libraries/superfish/css/superfish.css?p7nidb");
+    </style>
+    <style type="text/css" media="screen">
+    @import url("https://www.shneorseed.com/sites/all/themes/theme667/css/boilerplate.css?p7nidb");
+    @import url("https://www.shneorseed.com/sites/all/themes/theme667/css/style.css?p7nidb");
+    </style>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/jquery_update/replace/jquery/1.8/jquery.min.js?v=1.8.3"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/misc/jquery.once.js?v=1.2"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/misc/drupal.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/jquery_update/replace/ui/external/jquery.cookie.js?v=67fb34f6a866c40d0570"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/jquery_update/replace/misc/jquery.form.min.js?v=2.69"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/misc/ajax.js?v=7.59"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/jquery_update/js/jquery_update.js?v=0.0.1"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/libraries/colorbox/jquery.colorbox-min.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/colorbox/js/colorbox.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/colorbox/styles/default/colorbox_style.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/scroll_to_top/scroll_to_top.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/libraries/jquery.cycle/jquery.cycle.all.min.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/views_jqfx_cycle/views_jqfx_cycle.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/views/js/base.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/misc/progress.js?v=7.59"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/views/js/ajax_view.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/libraries/chosen/chosen.jquery.min.js?v=1.0.0"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/google_analytics/googleanalytics.js?p7nidb"></script>
+    <script type="text/javascript">
+    ////--><![CDATA[//><!--
+    (function(i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        },
+        i[r].l = 1 * new Date();
+        a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga");
+    ga("create", "UA-43677790-1", {
+        "cookieDomain": "auto"
+    });
+    ga("send", "pageview");
+    //--><!]]>
+    </script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/lang_dropdown/lang_dropdown.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/libraries/superfish/jquery.hoverIntent.minified.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/libraries/superfish/superfish.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/libraries/superfish/supersubs.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/superfish/superfish.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/themes/theme667/js/theme667.core.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/themes/theme667/js/jquery.loader.js?p7nidb"></script>
+    <script type="text/javascript">
+    ////--><![CDATA[//><!--
+    jQuery.extend(Drupal.settings, {
+        "basePath": "\/",
+        "pathPrefix": "",
+        "ajaxPageState": {
+            "theme": "theme667",
+            "theme_token": "Dnc7WVZVA8y2aR66ZUKyvucSmGAq3kOMS2eNzkrna-Q",
+            "jquery_version": "1.8",
+            "js": {
+                "sites\/all\/modules\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js": 1,
+                "misc\/jquery.once.js": 1,
+                "misc\/drupal.js": 1,
+                "sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js": 1,
+                "sites\/all\/modules\/jquery_update\/replace\/misc\/jquery.form.min.js": 1,
+                "misc\/ajax.js": 1,
+                "sites\/all\/modules\/jquery_update\/js\/jquery_update.js": 1,
+                "sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js": 1,
+                "sites\/all\/modules\/colorbox\/js\/colorbox.js": 1,
+                "sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.js": 1,
+                "sites\/all\/modules\/scroll_to_top\/scroll_to_top.js": 1,
+                "sites\/all\/libraries\/jquery.cycle\/jquery.cycle.all.min.js": 1,
+                "sites\/all\/modules\/views_jqfx_cycle\/views_jqfx_cycle.js": 1,
+                "sites\/all\/modules\/views\/js\/base.js": 1,
+                "misc\/progress.js": 1,
+                "sites\/all\/modules\/views\/js\/ajax_view.js": 1,
+                "sites\/all\/libraries\/chosen\/chosen.jquery.min.js": 1,
+                "sites\/all\/modules\/google_analytics\/googleanalytics.js": 1,
+                "0": 1,
+                "sites\/all\/modules\/lang_dropdown\/lang_dropdown.js": 1,
+                "sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js": 1,
+                "sites\/all\/libraries\/superfish\/superfish.js": 1,
+                "sites\/all\/libraries\/superfish\/supersubs.js": 1,
+                "sites\/all\/modules\/superfish\/superfish.js": 1,
+                "sites\/all\/themes\/theme667\/js\/theme667.core.js": 1,
+                "sites\/all\/themes\/theme667\/js\/jquery.loader.js": 1
+            },
+            "css": {
+                "modules\/system\/system.base.css": 1,
+                "modules\/system\/system.menus.css": 1,
+                "modules\/system\/system.messages.css": 1,
+                "modules\/system\/system.theme.css": 1,
+                "sites\/all\/libraries\/chosen\/chosen.css": 1,
+                "sites\/all\/modules\/scroll_to_top\/scroll_to_top.css": 1,
+                "modules\/aggregator\/aggregator.css": 1,
+                "modules\/book\/book.css": 1,
+                "modules\/comment\/comment.css": 1,
+                "modules\/field\/theme\/field.css": 1,
+                "modules\/node\/node.css": 1,
+                "modules\/poll\/poll.css": 1,
+                "modules\/search\/search.css": 1,
+                "modules\/user\/user.css": 1,
+                "modules\/forum\/forum.css": 1,
+                "sites\/all\/modules\/views\/css\/views.css": 1,
+                "sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.css": 1,
+                "sites\/all\/modules\/ctools\/css\/ctools.css": 1,
+                "sites\/all\/modules\/panels\/css\/panels.css": 1,
+                "0": 1,
+                "sites\/all\/modules\/views_jqfx_cycle\/views_jqfx_cycle.css": 1,
+                "sites\/all\/libraries\/superfish\/css\/superfish.css": 1,
+                "sites\/all\/themes\/theme667\/css\/boilerplate.css": 1,
+                "sites\/all\/themes\/theme667\/css\/style.css": 1
+            }
+        },
+        "colorbox": {
+            "opacity": "0.85",
+            "current": "{current} of {total}",
+            "previous": "\u00ab Prev",
+            "next": "Next \u00bb",
+            "close": "Close",
+            "maxWidth": "98%",
+            "maxHeight": "98%",
+            "fixed": true,
+            "mobiledetect": true,
+            "mobiledevicewidth": "480px"
+        },
+        "jcarousel": {
+            "ajaxPath": "\/?q=jcarousel\/ajax\/views"
+        },
+        "scroll_to_top": {
+            "label": "Back to top"
+        },
+        "views": {
+            "ajax_path": "\/?q=views\/ajax",
+            "ajaxViews": {
+                "views_dom_id:32f453367ad79d09f365e5028872f274": {
+                    "view_name": "portfolio",
+                    "view_display_id": "page_3",
+                    "view_args": "Squash",
+                    "view_path": "portfolio-3-cols\/Squash",
+                    "view_base_path": "portfolio-3-cols",
+                    "view_dom_id": "32f453367ad79d09f365e5028872f274",
+                    "pager_element": 0
+                }
+            }
+        },
+        "urlIsAjaxTrusted": {
+            "\/?q=views\/ajax": true,
+            "\/?q=portfolio-3-cols\/Squash": true
+        },
+        "lang_dropdown": {
+            "language_content": {
+                "jsWidget": {
+                    "widget": "chosen",
+                    "disable_search": 1,
+                    "no_results_text": "No language match"
+                }
+            }
+        },
+        "googleanalytics": {
+            "trackOutbound": 1,
+            "trackMailto": 1,
+            "trackDownload": 1,
+            "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip",
+            "trackColorbox": 1
+        },
+        "superfish": [{
+            "id": "1",
+            "sf": {
+                "animation": {
+                    "opacity": "show"
+                },
+                "speed": "\u0027fast\u0027",
+                "autoArrows": true,
+                "dropShadows": true,
+                "disableHI": false
+            },
+            "plugins": {
+                "supposition": false,
+                "bgiframe": false,
+                "supersubs": {
+                    "minWidth": "12",
+                    "maxWidth": "27",
+                    "extraWidth": 1
+                }
+            }
+        }, {
+            "id": "2",
+            "sf": {
+                "animation": {
+                    "opacity": "show"
+                },
+                "speed": "\u0027fast\u0027",
+                "autoArrows": false,
+                "dropShadows": true,
+                "disableHI": false
+            },
+            "plugins": {
+                "supposition": false,
+                "bgiframe": false,
+                "supersubs": {
+                    "minWidth": "12",
+                    "maxWidth": "27",
+                    "extraWidth": 1
+                }
+            }
+        }]
+    });
+    //--><!]]>
+    </script>
+    <script type="text/javascript">
+    WebFontConfig = {
+        google: {
+            families: ['Open+Sans:700,800:latin']
+        }
+    };
+    (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+    })();
+    </script>
+
+</head>
+<body id="body" class="html not-front not-logged-in no-sidebars page-portfolio-3-cols page-portfolio-3-cols-squash i18n-en with-navigation with-subnav page-squash section-portfolio-3-cols">
+
+    <div id="page-wrapper">
+
+        <div id="page">
+
+            <header id="header" role="banner" class="clearfix">
+                <div class="section-1 clearfix">
+                    <div class="header-wrapper">
+                       
+                                <!-- /.block -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <!-- /#header -->
+
+            <div id="main-wrapper">
+                <div id="main" class="clearfix">
+
+                    <div id="content" class="column" role="main">
+                        <div class="section">
+
+                            <h1 class="title" id="page-title">Squash</h1>
+
+                            <div class="tabs"></div>
+
+                            <div class="region region-content">
+                                <div id="block-system-main" class="block block-system block-odd">
+
+                                    <div class="content">
+                                        <div class="view view-portfolio view-id-portfolio view-display-id-page_3 view-dom-id-32f453367ad79d09f365e5028872f274">
+
+                                            <div class="view-content">
+                                                <div class="views-row views-row-1 views-row-odd views-row-first">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/JA%20PIC.png" title="JA" class="colorbox" data-colorbox-gallery="gallery-all-F1qrwKEDhXc" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/JA%20PIC.png?itok=mTl3_8Yh" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/1268">JA</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Summer squash. F.1</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Rind color: green with glossy skin.
+                                                        Fruit weight: 400 gr. Size: 20x7 cm.
+                                                        Shape: Cylindrical.
+                                                        50 days from sowing to maturity. Optimum temperature: 15-25℃.
+                                                        Resistance: Tolerant to disease in field.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-2 views-row-even">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/JACYNTA%20PIC.png" title="JACYNTA" class="colorbox" data-colorbox-gallery="gallery-all-F1qrwKEDhXc" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/JACYNTA%20PIC.png?itok=0-COONOD" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/1270">JACYNTA</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Summer squash F.1</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Fruit color: skeen color is pale green, flesh color is white.
+                                                        Size: 22-25 x 7 cm. Weight: 500 gr. Shape: cylinder.
+                                                        Vigorous feature. Days from sowing to harvest: 60.
+                                                        Harvest day from transplanting: 45. Light fruit Surface.
+                                                        Optimal temperatures: 15-25℃.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-3 views-row-odd">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/JAYCE%20PIC.png" title="JAYCE" class="colorbox" data-colorbox-gallery="gallery-all-F1qrwKEDhXc" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/JAYCE%20PIC.png?itok=FoyL1wJK" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/1269">JAYCE</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Summer squash F.1</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Fruit shape: cylinder. Skin color: whitish- green, flesh color: white.
+                                                        Size: 18x4.3 cm. Weight: 400 gr.
+                                                        Days from sowing to maturity: 55. . Days from flowering: 7.
+                                                        Smooth fruit surface; good storage and shipping.
+                                                        Optimal temperatures: 15-25℃.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-4 views-row-even">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/KADIN%20PIC.png" title="KADIN" class="colorbox" data-colorbox-gallery="gallery-all-F1qrwKEDhXc" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/KADIN%20PIC.png?itok=Nu65mvdy" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/1271">KADIN</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Zucchini</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Hybrid with straight and cylindrical fruit, 20 cm long. Its colour is bright
+                                                        medium-dark green with good flower persistence. Compact plant, with short
+                                                        internode, medium-early cycle and great yield performance.
+                                                        Intermediate resistance (IR) to Watermelon mosaic virus ( WMV)
+                                                        and Zucchini yellow mosaic virus (ZYMV).
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-5 views-row-odd">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/KARL.jpg" title="KARL" class="colorbox" data-colorbox-gallery="gallery-all-F1qrwKEDhXc" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/KARL.jpg?itok=Z-HygCwF" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/1123">KARL</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Green squash</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Nice fruit, strong plant, medium dark green color, long shape. High tolerance to diseases
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-6 views-row-even">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/KARO%20PIC.png" title="KARO" class="colorbox" data-colorbox-gallery="gallery-all-F1qrwKEDhXc" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/KARO%20PIC.png?itok=l4h2o1ca" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/1272">KARO</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Squash F.1</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Short cylindrical and light green squash.
+                                                        Good resistance to diseases.
+                                                        Good productivity.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-7 views-row-odd">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/KEN%20PIC.png" title="KEN" class="colorbox" data-colorbox-gallery="gallery-all-F1qrwKEDhXc" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/KEN%20PIC.png?itok=DeJPJBJd" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/1273">KEN</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Dark green zucchini</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Fruit size: 4-7 cm in diameter with deep green color.
+                                                        Semi bush type zucchini with 15-17 cm size.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-8 views-row-even">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/KEVIN%20PIC.png" title="KEVIN" class="colorbox" data-colorbox-gallery="gallery-all-F1qrwKEDhXc" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/KEVIN%20PIC.png?itok=jJIIRwGl" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/1274">KEVIN</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Dark green zucchini</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Long lasting and strong plant vigor which enable the harvesting season to be more flexible.
+                                                        Open plant for easy harvesting. Very fast enlargement and excellent quality.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-9 views-row-odd">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/KIRA%20PIC.png" title="KIRA" class="colorbox" data-colorbox-gallery="gallery-all-F1qrwKEDhXc" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/KIRA%20PIC.png?itok=F_kMQU27" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/1275">KIRA</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Green zucchini F.1</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Medium-early cycle. Compact and vigorous plant, cylindrical long shape.
+                                                        Fruit size: 20 cm. Dark green skin color. Excellent for flower harvest too.
+                                                        Remarkable yield.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-10 views-row-even">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/KIRK%20PIC.png" title="KIRK" class="colorbox" data-colorbox-gallery="gallery-all-F1qrwKEDhXc" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/KIRK%20PIC.png?itok=9Pj5_4pG" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/1276">KIRK</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Dark green zucchini</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Cylindrical fruit: 25-27 cm long with a diameter of 4-5 cm. Maturity: about 50-55 days.
+                                                        Compact bush type and erect plant with open growing habit.
+                                                        This zucchini is long, and slightly club-shaped fruits. Average fruit weight is 350-400 gr.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-11 views-row-odd">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/LAGO%20PIC.png" title="LAGO" class="colorbox" data-colorbox-gallery="gallery-all-F1qrwKEDhXc" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/LAGO%20PIC.png?itok=3cZ0QIrH" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/1277">LAGO</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Yellow zucchini F.1</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Bright yellow zucchini with a lingering flower. Straight and cylindrical fruit
+                                                        with average length of 16-18 cm. Compact and early plant with excellent fertility.
+                                                        Suitable for cultivation in greenhouse and open field as well.
+                                                        Particularly appreciated for its sweet and crunchy taste. Also used for fresh consumption.
+                                                        Resistances: Intermediate (IR) to Watermelon mosaic virus (WMV) and Zucchini yellow mosaic virus (ZYMV).
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-12 views-row-even">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/LAGREEN%20PIC.png" title="LAGREEN" class="colorbox" data-colorbox-gallery="gallery-all-F1qrwKEDhXc" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/LAGREEN%20PIC.png?itok=UPKnWrvT" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/1278">LAGREEN</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Light green squash. Hybrid F.1</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Fruit color: light green with green at the peduncle side.
+                                                        Shape and size: medium length and cylindrical, smooth and shiny.
+                                                        Suitable for cold season sowing in greenhouse and summer season sowing at open field.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-13 views-row-odd">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/ss_Page_35_Image_0004.jpg" title="MAKSIM " class="colorbox" data-colorbox-gallery="gallery-all-F1qrwKEDhXc" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/ss_Page_35_Image_0004.jpg?itok=65KRBkEU" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/1034">MAKSIM </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Yellow Zucchini type. F.1</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Strong plant, high quality and smooth fruits especially in the neck area.
+                                                        Easy to harvest, prolonged yield. Fruit color: attractive deep golden yellow.
+                                                        Shape and size: cylindrical shape, uniform fruit, 16-20 cm long, 4.5 cm diameter.
+                                                        Maturity : about 47 days. For open field cultivation.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-14 views-row-even">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/ss_Page_36_Image_0002.jpg" title="MATAN " class="colorbox" data-colorbox-gallery="gallery-all-F1qrwKEDhXc" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/ss_Page_36_Image_0002.jpg?itok=UkGPI80O" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/1038">MATAN </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Hybrid F1</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Dark green Zucchini type.Maturity about 43
+                                                        days.Fruit size: 22cm length,5cm diameter.
+                                                        Fruit shape:cylindrical.Fruit color: dark
+                                                        green.Vigorous plant, high yield.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-15 views-row-odd">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/MATANEL%20squash.JPG" title="MATANEL" class="colorbox" data-colorbox-gallery="gallery-all-F1qrwKEDhXc" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/MATANEL%20squash.JPG?itok=0t_gpovB" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/1040">MATANEL</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Hybrid F1.</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Maturity about 43 days.Fruit size: 22cm
+                                                        lenght,5cm diameter.Fruit shape: cylindrical.
+                                                        Fruit color: brilliant green.Compact plant
+                                                        with very short internodes, early maturty.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-16 views-row-even">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/ss_Page_36_Image_0005.jpg" title="MATI" class="colorbox" data-colorbox-gallery="gallery-all-F1qrwKEDhXc" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/ss_Page_36_Image_0005.jpg?itok=nTL3oFBO" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/1041">MATI</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Hybrid F1</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Dark green with white spots on it,high
+                                                        tolerance to desist.
+                                                        Cylindrical shape. Productive plant.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-17 views-row-odd">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/MOR%20squash.jpg" title="MOR " class="colorbox" data-colorbox-gallery="gallery-all-F1qrwKEDhXc" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/MOR%20squash.jpg?itok=3vnRMY4l" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/1124">MOR </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Green squash</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Nice fruit, strong plant, medium dark green color, long shape. High tolerance to diseases.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-18 views-row-even">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/ss_Page_35_Image_0002.jpg" title="MORDECHAY " class="colorbox" data-colorbox-gallery="gallery-all-F1qrwKEDhXc" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/ss_Page_35_Image_0002.jpg?itok=RsqlgAia" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/1032">MORDECHAY </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Hybrid F1</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Maturity about 43 days.Fruit size: 22cm
+                                                        lenght,5cm diameter.Fruit shape: cylindrical.
+                                                        Fruit color: brilliant light green.Compact
+                                                        plant with very short internodes, early
+                                                        maturty.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-19 views-row-odd">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/ss_Page_36_Image_0003_0.jpg" title="MOSHE " class="colorbox" data-colorbox-gallery="gallery-all-F1qrwKEDhXc" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/ss_Page_36_Image_0003_0.jpg?itok=_blRoCfY" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/1039">MOSHE </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">F1</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Beirut type,fat edge,very good for staffing,
+                                                        high tolerance to deseases
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-20 views-row-even views-row-last">
+
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="https://www.shneorseed.com/sites/default/files/SIM.jpg" title="SIM" class="colorbox" data-colorbox-gallery="gallery-all-F1qrwKEDhXc" data-cbox-img-attrs="{&quot;title&quot;: &quot;&quot;, &quot;alt&quot;: &quot;&quot;}">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/portfolio_3_cols/public/SIM.jpg?itok=jZ_rK6-1" width="268" height="168" alt="" title=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-title-field">
+                                                        <div class="field-content">
+                                                            <a href="/?q=node/1122">SIM</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-sub-title">
+                                                        <div class="field-content">Green squash</div>
+                                                    </div>
+                                                    <div class="views-field views-field-body">
+                                                        <div class="field-content">Strong plant, very good viruses&#039; tolerance, nice fruit, medium dark green color.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- /.content -->
+
+                                </div>
+                                <!-- /.block -->
+                            </div>
+
+                        </div>
+                        <!-- /.section -->
+                    </div>
+                    <!-- /#content -->
+
+                </div>
+                <!-- /#main -->
+            </div>
+            <!-- /#main-wrapper -->
+
+            <footer id="footer" role="contentinfo">
+                <div class="footer-wrapper clearfix">
+                    <div class="region region-footer">
+                        <div id="block-block-5" class="block block-block block-even">
+
+                           
+                        </div>
+                        <!-- /.block -->
+                        <div id="block-block-6" class="block block-block block-even">
+
+                           
+                            <!-- /.content -->
+
+                        </div>
+                        <!-- /.block -->
+                    </div>
+                </div>
+                <!-- /#footer-wrapper -->
+            </footer>
+            <!-- /#footer -->
+
+        </div>
+        <!-- /#page -->
+    </div>
+    <!-- /#page-wrapper -->
+</body>
+</html>
