@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+
+<!--[if IE 8 ]><html lang="en" dir="ltr"  class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html lang="en" dir="ltr"  class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" dir="ltr" class="no-js">
+<!--<![endif]-->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta name="Generator" content="Drupal 7 (http://drupal.org)"/>
+    <link rel="shortcut icon" href="https://www.shneorseed.com/sites/all/themes/theme667/favicon.ico" type="image/vnd.microsoft.icon"/>
+
+    <!--[if lte IE 7]> <div style=' text-align:center; clear: both; padding:0 0 0 15px; position: relative;'> <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div> <![endif]-->
+
+
+    <!--[if LT IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+
+    <!--[if lte IE 8]>
+    	<style type="text/css">
+        	.poll .bar, .poll .bar .foreground,
+    		#superfish-1 ul,
+    		section.block .view .view-node a, 
+    		.view-services .jcarousel-container-horizontal ul li .view-node a, 
+    		.view-node a,
+    		ul.links li a,
+    		.content ul.pager li.pager-current,
+    		.content ul.pager li a { behavior:url(/sites/all/themes/theme667/js/PIE.php); zoom:1; position:relative;}
+    	</style>
+    <![endif]-->
+
+    <style type="text/css" media="all">
+    @import url("https://www.shneorseed.com/modules/system/system.base.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/system/system.menus.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/system/system.messages.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/system/system.theme.css?p7nidb");
+    </style>
+    <style type="text/css" media="all">
+    @import url("https://www.shneorseed.com/sites/all/libraries/chosen/chosen.css?p7nidb");
+    </style>
+    <style type="text/css" media="all">
+    @import url("https://www.shneorseed.com/sites/all/modules/scroll_to_top/scroll_to_top.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/aggregator/aggregator.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/book/book.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/comment/comment.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/field/theme/field.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/node/node.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/poll/poll.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/search/search.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/user/user.css?p7nidb");
+    @import url("https://www.shneorseed.com/modules/forum/forum.css?p7nidb");
+    @import url("https://www.shneorseed.com/sites/all/modules/views/css/views.css?p7nidb");
+    </style>
+    <style type="text/css" media="all">
+    @import url("https://www.shneorseed.com/sites/all/modules/colorbox/styles/default/colorbox_style.css?p7nidb");
+    @import url("https://www.shneorseed.com/sites/all/modules/ctools/css/ctools.css?p7nidb");
+    @import url("https://www.shneorseed.com/sites/all/modules/panels/css/panels.css?p7nidb");
+    </style>
+    <style type="text/css" media="all">
+        <!--/*-->
+        <![CDATA[/*><!--*/
+        #back-top{right:40px;}#back-top span#button{background-color:#d1422e;}#back-top span#button:hover{opacity:1;filter:alpha(opacity = 1);background-color:#3e3d30;}span#link{display :none;}
+
+        /*]]>
+        * /-- >
+        
+    </style>
+    <style type="text/css" media="all">
+    @import url("https://www.shneorseed.com/sites/all/modules/views_jqfx_cycle/views_jqfx_cycle.css?p7nidb");
+    @import url("https://www.shneorseed.com/sites/all/modules/jcarousel/skins/default/jcarousel-default.css?p7nidb");
+    @import url("https://www.shneorseed.com/sites/all/libraries/superfish/css/superfish.css?p7nidb");
+    </style>
+    <style type="text/css" media="screen">
+    @import url("https://www.shneorseed.com/sites/all/themes/theme667/css/boilerplate.css?p7nidb");
+    @import url("https://www.shneorseed.com/sites/all/themes/theme667/css/style.css?p7nidb");
+    </style>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/jquery_update/replace/jquery/1.8/jquery.min.js?v=1.8.3"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/misc/jquery.once.js?v=1.2"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/misc/drupal.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/libraries/colorbox/jquery.colorbox-min.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/colorbox/js/colorbox.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/colorbox/styles/default/colorbox_style.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/scroll_to_top/scroll_to_top.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/libraries/jquery.cycle/jquery.cycle.all.min.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/views_jqfx_cycle/views_jqfx_cycle.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/jcarousel/js/jquery.jcarousel.min.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/jcarousel/js/jcarousel.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/libraries/chosen/chosen.jquery.min.js?v=1.0.0"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/google_analytics/googleanalytics.js?p7nidb"></script>
+    <script type="text/javascript">
+    ////--><![CDATA[//><!--
+    (function(i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        },
+        i[r].l = 1 * new Date();
+        a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga");
+    ga("create", "UA-43677790-1", {
+        "cookieDomain": "auto"
+    });
+    ga("send", "pageview");
+    //--><!]]>
+    </script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/lang_dropdown/lang_dropdown.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/libraries/superfish/jquery.hoverIntent.minified.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/libraries/superfish/superfish.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/libraries/superfish/supersubs.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/modules/superfish/superfish.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/themes/theme667/js/theme667.core.js?p7nidb"></script>
+    <script type="text/javascript" src="https://www.shneorseed.com/sites/all/themes/theme667/js/jquery.loader.js?p7nidb"></script>
+    <script type="text/javascript">
+    ////--><![CDATA[//><!--
+    jQuery.extend(Drupal.settings, {
+        "basePath": "\/",
+        "pathPrefix": "",
+        "ajaxPageState": {
+            "theme": "theme667",
+            "theme_token": "ks9QVE4v41dlUFmfV4AFY-hnzuSTIZC-4bdGS_O3dJI",
+            "js": {
+                "sites\/all\/modules\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js": 1,
+                "misc\/jquery.once.js": 1,
+                "misc\/drupal.js": 1,
+                "sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js": 1,
+                "sites\/all\/modules\/colorbox\/js\/colorbox.js": 1,
+                "sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.js": 1,
+                "sites\/all\/modules\/scroll_to_top\/scroll_to_top.js": 1,
+                "sites\/all\/libraries\/jquery.cycle\/jquery.cycle.all.min.js": 1,
+                "sites\/all\/modules\/views_jqfx_cycle\/views_jqfx_cycle.js": 1,
+                "sites\/all\/modules\/jcarousel\/js\/jquery.jcarousel.min.js": 1,
+                "sites\/all\/modules\/jcarousel\/js\/jcarousel.js": 1,
+                "sites\/all\/libraries\/chosen\/chosen.jquery.min.js": 1,
+                "sites\/all\/modules\/google_analytics\/googleanalytics.js": 1,
+                "0": 1,
+                "sites\/all\/modules\/lang_dropdown\/lang_dropdown.js": 1,
+                "sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js": 1,
+                "sites\/all\/libraries\/superfish\/superfish.js": 1,
+                "sites\/all\/libraries\/superfish\/supersubs.js": 1,
+                "sites\/all\/modules\/superfish\/superfish.js": 1,
+                "sites\/all\/themes\/theme667\/js\/theme667.core.js": 1,
+                "sites\/all\/themes\/theme667\/js\/jquery.loader.js": 1
+            },
+            "css": {
+                "modules\/system\/system.base.css": 1,
+                "modules\/system\/system.menus.css": 1,
+                "modules\/system\/system.messages.css": 1,
+                "modules\/system\/system.theme.css": 1,
+                "sites\/all\/libraries\/chosen\/chosen.css": 1,
+                "sites\/all\/modules\/scroll_to_top\/scroll_to_top.css": 1,
+                "modules\/aggregator\/aggregator.css": 1,
+                "modules\/book\/book.css": 1,
+                "modules\/comment\/comment.css": 1,
+                "modules\/field\/theme\/field.css": 1,
+                "modules\/node\/node.css": 1,
+                "modules\/poll\/poll.css": 1,
+                "modules\/search\/search.css": 1,
+                "modules\/user\/user.css": 1,
+                "modules\/forum\/forum.css": 1,
+                "sites\/all\/modules\/views\/css\/views.css": 1,
+                "sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.css": 1,
+                "sites\/all\/modules\/ctools\/css\/ctools.css": 1,
+                "sites\/all\/modules\/panels\/css\/panels.css": 1,
+                "0": 1,
+                "sites\/all\/modules\/views_jqfx_cycle\/views_jqfx_cycle.css": 1,
+                "sites\/all\/modules\/jcarousel\/skins\/default\/jcarousel-default.css": 1,
+                "sites\/all\/libraries\/superfish\/css\/superfish.css": 1,
+                "sites\/all\/themes\/theme667\/css\/boilerplate.css": 1,
+                "sites\/all\/themes\/theme667\/css\/style.css": 1
+            }
+        },
+        "colorbox": {
+            "opacity": "0.85",
+            "current": "{current} of {total}",
+            "previous": "\u00ab Prev",
+            "next": "Next \u00bb",
+            "close": "Close",
+            "maxWidth": "98%",
+            "maxHeight": "98%",
+            "fixed": true,
+            "mobiledetect": true,
+            "mobiledevicewidth": "480px"
+        },
+        "jcarousel": {
+            "ajaxPath": "\/?q=jcarousel\/ajax\/views",
+            "carousels": {
+                "jcarousel-dom-1": {
+                    "view_options": {
+                        "view_args": "",
+                        "view_path": "node",
+                        "view_base_path": "testru",
+                        "view_display_id": "block",
+                        "view_name": "services",
+                        "jcarousel_dom_id": 1
+                    },
+                    "skin": "default",
+                    "scroll": 1,
+                    "autoPause": 1,
+                    "start": 1,
+                    "selector": ".jcarousel-dom-1"
+                }
+            }
+        },
+        "scroll_to_top": {
+            "label": "Back to top"
+        },
+        "viewsJqfxCycle": {
+            "#views_jqfx_cycle_main_slider-block": {
+                "num_divs": 11,
+                "id_prefix": "#views_jqfx_cycle_main_",
+                "div_prefix": "#views_jqfx_cycle_div_",
+                "vss_id": "slider-block",
+                "effect": "fade",
+                "transition_advanced": 1,
+                "timeout": 5000,
+                "speed": 700,
+                "delay": 0,
+                "sync": 1,
+                "random": 0,
+                "pause": 1,
+                "pause_on_click": 0,
+                "start_paused": 0,
+                "remember_slide": 0,
+                "remember_slide_days": 1,
+                "pause_when_hidden": 0,
+                "pause_when_hidden_type": "full",
+                "amount_allowed_visible": "",
+                "nowrap": 0,
+                "fixed_height": 0,
+                "items_per_slide": 1,
+                "pager": 0,
+                "pager_type": "numbered",
+                "pager_fields": {
+                    "field_slide_image": 0
+                },
+                "pager_hover": 0,
+                "pager_click_to_page": 0,
+                "pager_weight": 1,
+                "controls": "top",
+                "controls_weight": 1,
+                "slide_counter": 0,
+                "slide_counter_weight": 1,
+                "cleartype": 0,
+                "cleartypenobg": 0,
+                "cycle_options": 0,
+                "skin": "default",
+                "action_advanced": 0,
+                "numbered_pager_click_to_page": 0,
+                "thumbnails_pager_click_to_page": 0,
+                "skin_info": {
+                    "title": "Default",
+                    "module": "views_jqfx_cycle",
+                    "path": "",
+                    "stylesheets": []
+                }
+            }
+        },
+        "lang_dropdown": {
+            "language_content": {
+                "jsWidget": {
+                    "widget": "chosen",
+                    "disable_search": 1,
+                    "no_results_text": "No language match"
+                }
+            }
+        },
+        "googleanalytics": {
+            "trackOutbound": 1,
+            "trackMailto": 1,
+            "trackDownload": 1,
+            "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip",
+            "trackColorbox": 1
+        },
+        "superfish": [{
+            "id": "1",
+            "sf": {
+                "animation": {
+                    "opacity": "show"
+                },
+                "speed": "\u0027fast\u0027",
+                "autoArrows": true,
+                "dropShadows": true,
+                "disableHI": false
+            },
+            "plugins": {
+                "supposition": false,
+                "bgiframe": false,
+                "supersubs": {
+                    "minWidth": "12",
+                    "maxWidth": "27",
+                    "extraWidth": 1
+                }
+            }
+        }, {
+            "id": "2",
+            "sf": {
+                "animation": {
+                    "opacity": "show"
+                },
+                "speed": "\u0027fast\u0027",
+                "autoArrows": false,
+                "dropShadows": true,
+                "disableHI": false
+            },
+            "plugins": {
+                "supposition": false,
+                "bgiframe": false,
+                "supersubs": {
+                    "minWidth": "12",
+                    "maxWidth": "27",
+                    "extraWidth": 1
+                }
+            }
+        }],
+        "urlIsAjaxTrusted": {
+            "\/": true
+        }
+    });
+    //--><!]]>
+    </script>
+    <script type="text/javascript">
+    WebFontConfig = {
+        google: {
+            families: ['Open+Sans:700,800:latin']
+        }
+    };
+    (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+    })();
+    </script>
+
+</head>
+<body id="body" class="html front not-logged-in no-sidebars page-node i18n-en with-navigation with-subnav">
+
+    <div id="page-wrapper">
+
+        <div id="page">
+
+            <header id="header" role="banner" class="clearfix">
+                <div class="section-1 clearfix">
+                    <div class="header-wrapper">
+                        
+                        
+                       
+                    </div>
+                </div>
+
+                <div class="section-2 clearfix">
+                    <div class="region region-header">
+                        <div id="block-views-slider-block" class="block block-views block-odd">
+
+                            <div class="content">
+                                <div class="view view-slider view-id-slider view-display-id-block view-dom-id-01b71ebba9b50cc6616ec5e375671f3c">
+
+                                    <div class="view-content">
+                                        <div class="view-grouping">
+                                            <div class="view-grouping-header"></div>
+                                            <div class="view-grouping-content">
+
+                                                <div class="skin-default">
+                                                    <div class="views-jqfx-controls-top clearfix">
+                                                        <div class="views_jqfx_cycle_controls views_jqfx_controls" id="views_jqfx_cycle_controls_slider-block">
+                                                            <a href="# " class="views_jqfx_cycle_previous views_jqfx_previous" id="views_jqfx_cycle_prev_slider-block">Previous</a>
+                                                            <a href="# " class="views_jqfx_cycle_pause views_jqfx_pause" id="views_jqfx_cycle_playpause_slider-block">Pause</a>
+                                                            <a href="# " class="views_jqfx_cycle_next views_jqfx_next" id="views_jqfx_cycle_next_slider-block">Next</a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div id="views_jqfx_cycle_main_slider-block" class="views_jqfx_cycle_main views jqfx_main">
+                                                        <div id="views_jqfx_cycle_teaser_section_slider-block" class="views_jqfx_cycle_teaser_section clearfix">
+                                                            <div class="views_jqfx_cycle_slide views_jqfx_slide views-row-1 views-row-odd" id="views_jqfx_cycle_div_slider-block_0">
+                                                                <div class="views-row views-row-0 views-row-first views-row-odd">
+
+                                                                    <div class="views-field views-field-field-slide-image">
+                                                                        <div class="field-content">
+                                                                            <a href="/?q=node/1065">
+                                                                                <img src="https://www.shneorseed.com/sites/default/files/slide11_0.jpg" width="1400" height="537" alt=""/>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="views_jqfx_cycle_slide views_jqfx_slide views-row-2 views_jqfx_cycle_hidden views-row-even" id="views_jqfx_cycle_div_slider-block_1">
+                                                                <div class="views-row views-row-0 views-row-first views-row-odd">
+
+                                                                    <div class="views-field views-field-field-slide-image">
+                                                                        <div class="field-content">
+                                                                            <a href="/?q=node/1064">
+                                                                                <img src="https://www.shneorseed.com/sites/default/files/slide10.jpg" width="1400" height="537" alt=""/>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="views_jqfx_cycle_slide views_jqfx_slide views-row-3 views_jqfx_cycle_hidden views-row-odd" id="views_jqfx_cycle_div_slider-block_2">
+                                                                <div class="views-row views-row-0 views-row-first views-row-odd">
+
+                                                                    <div class="views-field views-field-field-slide-image">
+                                                                        <div class="field-content">
+                                                                            <a href="/?q=node/1063">
+                                                                                <img src="https://www.shneorseed.com/sites/default/files/slide09.jpg" width="1400" height="537" alt=""/>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="views_jqfx_cycle_slide views_jqfx_slide views-row-4 views_jqfx_cycle_hidden views-row-even" id="views_jqfx_cycle_div_slider-block_3">
+                                                                <div class="views-row views-row-0 views-row-first views-row-odd">
+
+                                                                    <div class="views-field views-field-field-slide-image">
+                                                                        <div class="field-content">
+                                                                            <a href="/?q=node/1062">
+                                                                                <img src="https://www.shneorseed.com/sites/default/files/slide08.jpg" width="1400" height="537" alt=""/>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="views_jqfx_cycle_slide views_jqfx_slide views-row-5 views_jqfx_cycle_hidden views-row-odd" id="views_jqfx_cycle_div_slider-block_4">
+                                                                <div class="views-row views-row-0 views-row-first views-row-odd">
+
+                                                                    <div class="views-field views-field-field-slide-image">
+                                                                        <div class="field-content">
+                                                                            <a href="/?q=node/1061">
+                                                                                <img src="https://www.shneorseed.com/sites/default/files/slide07.jpg" width="1400" height="537" alt=""/>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="views_jqfx_cycle_slide views_jqfx_slide views-row-6 views_jqfx_cycle_hidden views-row-even" id="views_jqfx_cycle_div_slider-block_5">
+                                                                <div class="views-row views-row-0 views-row-first views-row-odd">
+
+                                                                    <div class="views-field views-field-field-slide-image">
+                                                                        <div class="field-content">
+                                                                            <a href="/?q=node/1060">
+                                                                                <img src="https://www.shneorseed.com/sites/default/files/slide06.jpg" width="1400" height="537" alt=""/>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="views_jqfx_cycle_slide views_jqfx_slide views-row-7 views_jqfx_cycle_hidden views-row-odd" id="views_jqfx_cycle_div_slider-block_6">
+                                                                <div class="views-row views-row-0 views-row-first views-row-odd">
+
+                                                                    <div class="views-field views-field-field-slide-image">
+                                                                        <div class="field-content">
+                                                                            <a href="/?q=node/1059">
+                                                                                <img src="https://www.shneorseed.com/sites/default/files/slide05.jpg" width="1400" height="537" alt=""/>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="views_jqfx_cycle_slide views_jqfx_slide views-row-8 views_jqfx_cycle_hidden views-row-even" id="views_jqfx_cycle_div_slider-block_7">
+                                                                <div class="views-row views-row-0 views-row-first views-row-odd">
+
+                                                                    <div class="views-field views-field-field-slide-image">
+                                                                        <div class="field-content">
+                                                                            <a href="/?q=node/1058">
+                                                                                <img src="https://www.shneorseed.com/sites/default/files/slide03.jpg" width="1400" height="537" alt=""/>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="views_jqfx_cycle_slide views_jqfx_slide views-row-9 views_jqfx_cycle_hidden views-row-odd" id="views_jqfx_cycle_div_slider-block_8">
+                                                                <div class="views-row views-row-0 views-row-first views-row-odd">
+
+                                                                    <div class="views-field views-field-field-slide-image">
+                                                                        <div class="field-content">
+                                                                            <a href="/?q=node/47">
+                                                                                <img src="https://www.shneorseed.com/sites/default/files/slide01.jpg" width="1400" height="537" alt=""/>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="views_jqfx_cycle_slide views_jqfx_slide views-row-10 views_jqfx_cycle_hidden views-row-even" id="views_jqfx_cycle_div_slider-block_9">
+                                                                <div class="views-row views-row-0 views-row-first views-row-odd">
+
+                                                                    <div class="views-field views-field-field-slide-image">
+                                                                        <div class="field-content">
+                                                                            <a href="/?q=node/50">
+                                                                                <img src="https://www.shneorseed.com/sites/default/files/slide02.jpg" width="1400" height="537" alt=""/>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="views_jqfx_cycle_slide views_jqfx_slide views-row-11 views_jqfx_cycle_hidden views-row-odd" id="views_jqfx_cycle_div_slider-block_10">
+                                                                <div class="views-row views-row-0 views-row-first views-row-odd">
+
+                                                                    <div class="views-field views-field-field-slide-image">
+                                                                        <div class="field-content">
+                                                                            <a href="/?q=node/51">
+                                                                                <img src="https://www.shneorseed.com/sites/default/files/slide04_0.jpg" width="1400" height="537" alt=""/>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- /.content -->
+
+                        </div>
+                        <!-- /.block -->
+                    </div>
+                </div>
+                <!-- /.section -->
+                <div class="section-3 clearfix">
+                    <div class="bottom-bg">
+                        <div class="region region-header-bottom">
+                           
+                        </div>
+                    </div>
+                </div>
+                <!-- /.section -->
+
+            </header>
+            <!-- /#header -->
+
+            <div id="main-wrapper">
+                <div id="main" class="clearfix">
+
+                    <div id="content" class="column" role="main">
+                        <div class="section">
+
+                            <h1 class="title" id="page-title">Welcome to Shneor Seed Co.</h1>
+
+                            <div class="tabs"></div>
+
+                            <div class="region region-content">
+                                <div id="block-system-main" class="block block-system block-odd">
+
+                                    <div class="content">
+                                        <div id="first-time">
+                                            <p>No front page content has been created yet.</p>
+                                        </div>
+                                    </div>
+                                    <!-- /.content -->
+
+                                </div>
+                                <!-- /.block -->
+                                <section id="block-views-category-block-1" class="block block-views block-even">
+
+                                    <h2>Leading Products</h2>
+
+                                    <div class="content">
+                                        <div class="view view-category view-id-category view-display-id-block_1 view-dom-id-5bcd476d57bfbc9d99f7156f066443b6">
+
+                                            <div class="view-content">
+                                                <div class="views-row views-row-1 views-row-odd views-row-first">
+
+                                                    <div class="views-field views-field-name-field-et">
+                                                        <div class="field-content">
+                                                            <a href="/?q=portfolio-3-cols/Cherry-tomato">Cherry tomato</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="/?q=portfolio-3-cols/Cherry-tomato">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/category_line/public/line_tomato_0.jpg?itok=4VIzvfVL" width="180" height="16" alt=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-2 views-row-even">
+
+                                                    <div class="views-field views-field-name-field-et">
+                                                        <div class="field-content">
+                                                            <a href="/?q=portfolio-3-cols/Tomato---Indeterminate-Type">Tomato - Indeterminate Type</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="/?q=portfolio-3-cols/Tomato---Indeterminate-Type">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/category_line/public/line_tomato_3.jpg?itok=en9t1OEo" width="180" height="16" alt=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-3 views-row-odd">
+
+                                                    <div class="views-field views-field-name-field-et">
+                                                        <div class="field-content">
+                                                            <a href="/?q=portfolio-3-cols/Tomato---Determinate-Type">Tomato - Determinate Type</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="/?q=portfolio-3-cols/Tomato---Determinate-Type">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/category_line/public/line_tomato_4.jpg?itok=uRbEz7m4" width="180" height="16" alt=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-4 views-row-even">
+
+                                                    <div class="views-field views-field-name-field-et">
+                                                        <div class="field-content">
+                                                            <a href="/?q=portfolio-3-cols/Watermelon---Seeded">Watermelon - Seeded</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="/?q=portfolio-3-cols/Watermelon---Seeded">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/category_line/public/line_Watermelon.jpg?itok=O5j9ckYj" width="180" height="16" alt=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-5 views-row-odd">
+
+                                                    <div class="views-field views-field-name-field-et">
+                                                        <div class="field-content">
+                                                            <a href="/?q=portfolio-3-cols/Watermelon---Seedless">Watermelon - Seedless</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="/?q=portfolio-3-cols/Watermelon---Seedless">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/category_line/public/line_Watermelon_0.jpg?itok=Y7FCHFEo" width="180" height="16" alt=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-6 views-row-even">
+
+                                                    <div class="views-field views-field-name-field-et">
+                                                        <div class="field-content">
+                                                            <a href="/?q=portfolio-3-cols/Eggplant">Eggplant</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="/?q=portfolio-3-cols/Eggplant">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/category_line/public/line_eggplant.jpg?itok=Lvn-Xe_Q" width="180" height="16" alt=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-7 views-row-odd">
+
+                                                    <div class="views-field views-field-name-field-et">
+                                                        <div class="field-content">
+                                                            <a href="/?q=portfolio-3-cols/Hot-Pepper">Hot Pepper</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="/?q=portfolio-3-cols/Hot-Pepper">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/category_line/public/line_hot.jpg?itok=u9pGCJk2" width="180" height="16" alt=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-8 views-row-even">
+
+                                                    <div class="views-field views-field-name-field-et">
+                                                        <div class="field-content">
+                                                            <a href="/?q=portfolio-3-cols/Cucumber">Cucumber</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="/?q=portfolio-3-cols/Cucumber">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/category_line/public/line_Cucumber.jpg?itok=tdIjBwxY" width="180" height="16" alt=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-9 views-row-odd">
+
+                                                    <div class="views-field views-field-name-field-et">
+                                                        <div class="field-content">
+                                                            <a href="/?q=portfolio-3-cols/Cabbage">Cabbage</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="/?q=portfolio-3-cols/Cabbage">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/category_line/public/line_Cabbage.jpg?itok=TFeO80cc" width="180" height="16" alt=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-10 views-row-even">
+
+                                                    <div class="views-field views-field-name-field-et">
+                                                        <div class="field-content">
+                                                            <a href="/?q=portfolio-3-cols/Lettuce">Lettuce</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="/?q=portfolio-3-cols/Lettuce">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/category_line/public/line_Lettuce.jpg?itok=EeNPgbmL" width="180" height="16" alt=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-11 views-row-odd">
+
+                                                    <div class="views-field views-field-name-field-et">
+                                                        <div class="field-content">
+                                                            <a href="/?q=portfolio-3-cols/Melon">Melon</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="/?q=portfolio-3-cols/Melon">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/category_line/public/line_melon.jpg?itok=Zq35QSul" width="180" height="16" alt=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row views-row-12 views-row-even views-row-last">
+
+                                                    <div class="views-field views-field-name-field-et">
+                                                        <div class="field-content">
+                                                            <a href="/?q=portfolio-3-cols/Squash">Squash</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                            <a href="/?q=portfolio-3-cols/Squash">
+                                                                <img src="https://www.shneorseed.com/sites/default/files/styles/category_line/public/line_Squash.jpg?itok=38IXyehN" width="180" height="16" alt=""/>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- /.content -->
+
+                                </section>
+                                <!-- /.block -->
+                            </div>
+
+                        </div>
+                        <!-- /.section -->
+                    </div>
+                    <!-- /#content -->
+
+                </div>
+                <!-- /#main -->
+            </div>
+            <!-- /#main-wrapper -->
+
+            <footer id="footer" role="contentinfo">
+                <div class="footer-wrapper clearfix">
+                    <div class="region region-footer">
+                        <div id="block-block-5" class="block block-block block-odd">
+
+                            <div class="content">
+
+                                <a href="?q=node/79">Disclaimer</a>
+                            </div>
+                            <!-- /.content -->
+
+                        </div>
+                        <!-- /.block -->
+                        <div id="block-superfish-2" class="block block-superfish block-even">
+
+                            <div class="content">
+                                <ul id="superfish-2" class="menu sf-menu sf-main-menu sf-horizontal sf-style-default sf-total-items-4 sf-parent-items-1 sf-single-items-3">
+                                    <li id="menu-1761-2" class="first odd sf-item-1 sf-depth-1 sf-total-children-17 sf-parent-children-0 sf-single-children-17 menuparent">
+                                        <a href="/?q=category-4-cols" title="" class="sf-depth-1 menuparent">Products</a>
+                                        <ul>
+                                            <li id="menu-1778-2" class="first odd sf-item-1 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Cherry-tomato" title="" class="sf-depth-2">Cherry tomato</a>
+                                            </li>
+                                            <li id="menu-1779-2" class="middle even sf-item-2 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Tomato---Determinate-Type" title="" class="sf-depth-2">Tomato - Determinate Type</a>
+                                            </li>
+                                            <li id="menu-1780-2" class="middle odd sf-item-3 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Tomato---Indeterminate-Type" title="" class="sf-depth-2">Tomato - Indeterminate Type</a>
+                                            </li>
+                                            <li id="menu-1763-2" class="middle even sf-item-4 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/melon" title="" class="sf-depth-2">Melon</a>
+                                            </li>
+                                            <li id="menu-1785-2" class="middle odd sf-item-5 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Sweet-Pepper" title="" class="sf-depth-2">Sweet Pepper</a>
+                                            </li>
+                                            <li id="menu-1786-2" class="middle even sf-item-6 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Mini-pepper" title="" class="sf-depth-2">Mini pepper</a>
+                                            </li>
+                                            <li id="menu-1787-2" class="middle odd sf-item-7 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Hot-Pepper" title="" class="sf-depth-2">Hot Pepper</a>
+                                            </li>
+                                            <li id="menu-1862-2" class="middle even sf-item-8 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Lettuce" title="" class="sf-depth-2">Lettuce</a>
+                                            </li>
+                                            <li id="menu-1859-2" class="middle odd sf-item-9 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Watermelon---Seedless" title="" class="sf-depth-2">Watermelon - Seedless</a>
+                                            </li>
+                                            <li id="menu-1860-2" class="middle even sf-item-10 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Watermelon---Seeded" title="" class="sf-depth-2">Watermelon - Seeded</a>
+                                            </li>
+                                            <li id="menu-1863-2" class="middle odd sf-item-11 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Cucumber" title="" class="sf-depth-2">Cucumber</a>
+                                            </li>
+                                            <li id="menu-1864-2" class="middle even sf-item-12 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Eggplant" title="" class="sf-depth-2">Eggplant</a>
+                                            </li>
+                                            <li id="menu-1865-2" class="middle odd sf-item-13 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Squash" title="" class="sf-depth-2">Squash</a>
+                                            </li>
+                                            <li id="menu-1866-2" class="middle even sf-item-14 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Cabbage" title="" class="sf-depth-2">Cabbage</a>
+                                            </li>
+                                            <li id="menu-1764-2" class="middle odd sf-item-15 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Broccoli" title="" class="sf-depth-2">Broccoli</a>
+                                            </li>
+                                            <li id="menu-2314-2" class="middle even sf-item-16 sf-depth-2 sf-no-children">
+                                                <a href="http://www.shneorseed.com/?q=portfolio-3-cols/Cauliflower" title="" class="sf-depth-2">Cauliflower</a>
+                                            </li>
+                                            <li id="menu-1911-2" class="last odd sf-item-17 sf-depth-2 sf-no-children">
+                                                <a href="/?q=portfolio-3-cols/Rootstock" title="" class="sf-depth-2">Rootstock</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-2448-2" class="middle even sf-item-2 sf-depth-1 sf-no-children">
+                                        <a href="/?q=distributers" class="sf-depth-1 sf-depth-1">Distributors</a>
+                                    </li>
+                                    
+                                    
+                                </ul>
+                            </div>
+                          
+
+                        </div>
+                        <!-- /.block -->
+                    </div>
+                </div>
+                <!-- /#footer-wrapper -->
+            </footer>
+            <!-- /#footer -->
+
+        </div>
+        <!-- /#page -->
+    </div>
+    <!-- /#page-wrapper -->
+</body>
+</html>
